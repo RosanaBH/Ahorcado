@@ -1,0 +1,102 @@
+body{
+    background-color: grey;
+}
+header{
+    background-color: lightgrey;
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+footer{
+    background-color: lightgrey;
+	color:#678C2E;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+footer:hover{
+	color: #364A16;
+}
+main{
+	background-color: #FFFFFF;
+}
+button{
+    background-color: #7fba67;
+    color:#FFFFFF;
+    border:thin; 
+	border-color: #364A16;
+    font-size:1em;
+	padding: 5px;
+	margin: 3px;
+	border-style: solid;
+	border-radius: 4px;
+	cursor: pointer;
+	height: 28px;
+	width: 28px;
+	
+}
+button:hover{
+	background-color: #364A16;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:active {
+  background-color: #364A16;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}	
+.flex-container{
+	display:flex;
+	flex-wrap:wrap;	
+}
+#palabra{
+	padding-left: 30px;
+	padding-top: 30px;
+}
+#botones{
+	padding: 30px;
+	max-width: 500px;
+}
+#horca{
+	padding: 30px;
+}
+#vida{
+	height: 175px;
+	width: 165px;
+}
+#bt-play{
+	height: 40px;
+	width: 90px;
+	text-align:center;
+	margin: 0px;
+}
+#bt-play span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#bt-play span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#bt-play:hover span {
+  padding-right: 25px;
+}
+#bt-play:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
